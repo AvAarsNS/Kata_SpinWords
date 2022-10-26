@@ -14,6 +14,10 @@ This is another test -> This is rehtona test
 - "A" -> no
 - "Patagonia" -> yes
 
+### Reverse a word
+- "A" -> "A"
+- "Hallo" -> "ollaH"
+
 ## Guards
 - Input contains only letters and spaces
 - A word does not include the space

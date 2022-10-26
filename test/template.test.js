@@ -1,5 +1,6 @@
 const {
-    doesWordContain5OrMoreLetters
+    doesWordContain5OrMoreLetters,
+    reverseWord
 } = require('../src/template');
 
 describe(`This is a test suite for the Stop gninnipS My sdroW!-kata.
@@ -16,6 +17,14 @@ With this function we reverse all words consisting of 5 or more letters.\n`, () 
         });
         it('Patagonia contains 5 letters 😁', () => {
             expect(doesWordContain5OrMoreLetters('Patagonia')).toBe(true);
+        });
+    });
+    describe('We want to reverse a given word', () => {
+        it('A reversed is still A', () => {
+            expect(reverseWord('A')).toEqual('A');
+        });
+        it('Hello reversed is olleH', () => {
+            expect(reverseWord('Hello')).toEqual('olleH');
         });
     });
 });
