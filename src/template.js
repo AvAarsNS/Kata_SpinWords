@@ -1,5 +1,7 @@
-function templateFunction(x) {
-    return x / 2
+function doesWordContain5OrMoreLetters(word) {
+    return word.length >= 5;
 }
 
-module.exports = templateFunction
+module.exports = {
+    doesWordContain5OrMoreLetters
+}
