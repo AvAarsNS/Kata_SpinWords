@@ -9,15 +9,19 @@ This is another test -> This is rehtona test
 
 ## Atomic behaviours
 ### Does a word contain 5 or more letters?
-- "Hallo" -> yes
-- "Doei" -> no
-- "A" -> no
-- "Patagonia" -> yes
+😊- "Hallo" -> yes
+😊- "Doei" -> no
+😊- "A" -> no
+😊- "Patagonia" -> yes
 
 ### Reverse a word
-- "A" -> "A"
-- "Hallo" -> "ollaH"
+😊- "A" -> "A"
+😊- "Hallo" -> "ollaH"
 
+### Reverse a word with 5 or more letters
+😊- "Doei" -> "Doei"
+😊- "Hallo" -> "ollaH"
+😊- "Weekend" -> "dnekeeW"
 ## Guards
 - Input contains only letters and spaces
 - A word does not include the space

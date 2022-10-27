@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1666775306863" clover="3.2.0">
-  <project timestamp="1666775306864" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="7" coveredelements="7" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
-    <file name="template.js" path="C:\Users\Arthur.vanAarsse_nsp\Documents\Katas\Kata_SpinWords\src\template.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="2" count="4" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
+<coverage generated="1666858089725" clover="3.2.0">
+  <project timestamp="1666858089725" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="13" coveredelements="13" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="template.js" path="C:\NS\NS\KATA\Kata_SpinWords\src\template.js">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="7" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
+      <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -8,7 +8,15 @@ function reverseWord(word) {
     return reversedWordAsArray.join('');
 }
 
+function ReverseBigWord(word) {
+    if (doesWordContain5OrMoreLetters(word))
+        return reverseWord(word); 
+    else 
+        return word
+}
+
 module.exports = {
     doesWordContain5OrMoreLetters,
-    reverseWord
+    reverseWord,
+    ReverseBigWord
 }
