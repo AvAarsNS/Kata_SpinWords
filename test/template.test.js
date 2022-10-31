@@ -1,7 +1,9 @@
 const {
     doesWordContain5OrMoreLetters,
     reverseWord,
-    ReverseBigWord
+    ReverseBigWord,
+    splitSentenceIntoWords,
+    spinWords
 } = require('../src/template');
 
 describe(`This is a test suite for the Stop gninnipS My sdroW!-kata.
@@ -37,6 +39,28 @@ With this function we reverse all words consisting of 5 or more letters.\n`, () 
         }); 
         it('Weekend will be dnekeeW', () => {
             expect(ReverseBigWord('Weekend')).toEqual('dnekeeW');            
+        });
+    });
+    describe('Split a sentence into individual words', () => {
+        it('"Hallo" contains one word: "Hallo"', () => {
+            expect(splitSentenceIntoWords('Hallo')).toEqual(['Hallo']);
+        });
+        it('"Hallo doei" contains two words: "Hallo" and "doei"', () => {
+            expect(splitSentenceIntoWords('Hallo doei')).toEqual(['Hallo', 'doei']);
+        });
+        it('"Hallo doei weekend" contains three words: "Hallo", "doei" and "weekend"', () => {
+            expect(splitSentenceIntoWords('Hallo doei weekend')).toEqual(['Hallo', 'doei', 'weekend']);
+        });
+    });
+    describe('We want to apply all the rules of the kata to a sentence', () => {
+        it('"Hey fellow warriors" becomes "Hey wollef sroirraw"', () => {
+            expect(spinWords("Hey fellow warriors")).toEqual("Hey wollef sroirraw");
+        });
+        it('"This is a test" becomes "This is a test"', () => {
+            expect(spinWords("This is a test")).toEqual("This is a test");
+        });
+        it('"This is another test" becomes "This is rehtona test"', () => {
+            expect(spinWords("This is another test")).toEqual("This is rehtona test");
         });
     });
 });
